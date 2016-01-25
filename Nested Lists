@@ -1,0 +1,35 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(raw_input())
+l=[]
+count=0
+while count<n:
+    h=[]
+    name=raw_input()
+    marks=float(raw_input())
+    h=[marks,name]
+    l.append(h)
+    count+=1
+
+p=[]
+l.sort()
+p=l
+
+temp=p[0]
+count=1
+while count<len(p):
+    if(p[count][0]==temp[0]):
+        count+=1
+    else:
+        x=p[count]
+        print p[count][1]
+        index=count
+        break
+
+i=index+1
+while i<len(p):
+    if(x[0]==p[i][0]):
+
+        print p[i][1]
+        i+=1
+    else:
+        break

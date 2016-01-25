@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=raw_input()
+s=raw_input().split(" ")
+index=int(s[0])
+string=n[:index]+s[1]+n[index+1:]
+print string

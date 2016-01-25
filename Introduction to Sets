@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+s=int(raw_input())
+word=list(map(int,raw_input().split(" ")))
+m=set()
+for i in range(0,s):
+  m.add(word[i])
+total=len(m)
+
+sum=0.00
+l=list(m)
+
+for i in range(0,total):
+    sum=sum+l[i]
+print sum/total

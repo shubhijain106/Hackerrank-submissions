@@ -1,0 +1,14 @@
+from itertools import combinations
+
+b=raw_input().split()
+l=list(b[0])
+
+l.sort()
+
+count=1
+while count<=int(b[1]):
+    p=list(combinations(l,count))
+
+    for n in range(0,len(p)):
+        print ''.join(p[n])
+    count+=1

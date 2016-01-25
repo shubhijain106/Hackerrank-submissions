@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from cmath import polar
+n = complex(input())
+p=polar(n)
+
+print p[0]

@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from __future__ import print_function
+from itertools import product
+
+a=list(map(int,raw_input().split()))
+b=list(map(int,raw_input().split()))
+p=list(product(a,b))
+p.sort()
+for n in range(0,len(p)):
+    print (p[n],end=' ')

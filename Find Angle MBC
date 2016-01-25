@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from math import atan, degrees
+import math
+a = int(raw_input())
+b = int(raw_input())
+opp=(math.sqrt(a*a+b*b))/2
+adj=math.sqrt(b*b-opp*opp)
+
+print str((int(round(degrees(atan(opp/adj))))))+"°"

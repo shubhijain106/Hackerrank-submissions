@@ -1,0 +1,5 @@
+x=int(raw_input())
+width=len(bin(x)[2:])
+
+for n in range(1,x+1):
+    print(str(n).rjust(width))+" "+(str(oct(n))[1:].rjust(width))+" "+(str(hex(n))[2:].upper().rjust(width))+" "+(str(bin(n))[2:].rjust(width))

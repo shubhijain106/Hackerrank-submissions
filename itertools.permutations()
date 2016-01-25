@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import permutations
+
+
+b=raw_input().split()
+
+p=list(permutations(b[0],int(b[1])))
+p.sort()
+for n in range(0,len(p)):
+
+    print ''.join(p[n])

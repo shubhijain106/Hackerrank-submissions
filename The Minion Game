@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+s=raw_input()
+vowels="AIEOU"
+k,st=0,0
+for i in range(0,len(s)):
+    if s[i] in vowels:
+        k=k+(len(s)-i)
+    else:
+        st=st+(len(s)-i)
+if st==k:
+    print "Draw"
+elif st>k:
+    print "Stuart "+ str(st)
+else:
+    print "Kevin "+ str(k)

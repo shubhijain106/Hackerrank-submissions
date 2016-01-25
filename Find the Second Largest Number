@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(raw_input())
+l=[]
+l=list(map(int,raw_input().split(" ")))
+l.sort()
+l.reverse()
+count=1
+temp=l[0]
+while count<len(l):
+    if(l[count]==temp):
+        count+=1
+    else:
+        print l[count]
+        break

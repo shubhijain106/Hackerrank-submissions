@@ -1,0 +1,55 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=raw_input()
+l=len(n)
+count=0
+flag=0
+while count<l:
+    if n[count].isalnum():
+        print True
+        flag=1
+        break
+    count+=1
+if not(flag==1):
+    print False
+count=0
+flag=0
+while count<l:
+    if n[count].isalpha():
+        print True
+        flag=1
+        break
+    count+=1
+if not(flag==1):
+    print False
+count=0
+flag=0
+while count<l:
+    if n[count].isdigit():
+        print True
+        flag=1
+        break
+    count+=1
+if not(flag==1):
+    print False
+count=0
+flag=0
+while count<l:
+    if n[count].islower():
+        print True
+        flag=1
+        break
+    count+=1
+if not(flag==1):
+    print False
+count=0
+flag=0
+while count<l:
+    if n[count].isupper():
+        print True
+        flag=1
+        break
+    count+=1
+if not(flag==1):
+    print False
+

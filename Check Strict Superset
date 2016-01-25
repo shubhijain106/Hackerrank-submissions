@@ -1,0 +1,11 @@
+A = set(raw_input().split())
+k=0
+n=int(raw_input())
+for i in range(n):
+    B = set(raw_input().split())
+    if(len(A.intersection(B))==len(B)):
+        k+=1
+if(k==n):
+    print True
+else:
+    print False

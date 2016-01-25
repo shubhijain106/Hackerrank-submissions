@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=raw_input()
+sub=raw_input()
+start=0
+end=len(sub)-1
+r=0
+for x in range(0,len(n)-len(sub)+1):
+    
+    if(n[start:end+1]==sub):
+        r+=1
+    start=start+1
+    end=end+1
+
+print r

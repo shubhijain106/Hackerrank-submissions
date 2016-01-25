@@ -1,0 +1,19 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=list(map(int,raw_input().split()))
+a=list(map(int,raw_input().split()))
+k=0
+r=set(map(int,raw_input().split()))
+p=set(map(int,raw_input().split()))
+for i in range(0,len(a)):
+
+    
+
+    if(a[i] in r):
+        k+=1
+
+    elif(a[i] in p):
+        k-=1
+
+
+print k

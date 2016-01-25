@@ -1,0 +1,21 @@
+from __future__ import print_function
+cr=raw_input()
+
+i=0;
+string=[]
+while i<len(cr):
+    
+
+    if(cr[i].islower() and i==0):
+        string.append( cr[i].upper())
+
+
+    elif(i>0 and cr[i-1]==" "):
+        string.append( cr[i].upper())
+
+    else:
+        string.append( cr[i])
+
+    i+=1
+for l in range(0,len(string)):
+    print(string[l],end='')

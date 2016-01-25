@@ -1,0 +1,16 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from __future__ import division
+dict={}
+n=int(raw_input())
+count=0
+while count<n:
+    s=raw_input()
+    li=s.split(" ")
+    key=li[0]
+    sum=float(li[1])+float(li[2])+float(li[3])
+    avg=sum/3
+    dict[key]=avg
+    count+=1
+q=raw_input()
+print "%.2f"%dict[q]
+   

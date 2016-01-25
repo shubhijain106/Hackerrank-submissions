@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import textwrap
+string = raw_input()
+n=int(raw_input())
+
+print textwrap.fill(string,n)

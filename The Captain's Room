@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+k=int(raw_input())
+A = list(map(int,raw_input().split()))
+n=len(A)
+group=n//k
+set_S= set(A)
+x=sum(A)
+print (sum(set_S)*k - x)//(k-1)
+

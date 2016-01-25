@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(raw_input())
+
+a=set()
+a=set(list(map(int,raw_input().split(" "))))
+m=int(raw_input())
+b=set()
+b=set(list(map(int,raw_input().split(" "))))
+
+s= (a.difference(b)).union((b.difference(a)))
+
+for n in sorted(list(s)):
+    print n
